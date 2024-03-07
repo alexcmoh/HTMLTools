@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <h1>HTML Text Editor</h1>
+    <div class="half-l">
+        <textarea type="text" id="input"></textarea>
+    </div>
+    <div class="half-r">
+        <div id="output" contenteditable="true"></div>
+    </div>
+
+    <script>
+        const input = document.querySelector('#input'),
+        output = document.querySelector('#output');
+        $("#input").on("keyup", function(){
+            document.getElementById('output').innerHTML = document.getElementById('input').value;
+        });
+        $("textarea").each(function () {
+            this.setAttribute("style", "height:" + (this.scrollHeight) + "px;overflow-y:hidden;");
+            }).on("input", function () {
+            this.style.height = 0;
+            this.style.height = (this.scrollHeight) + "px";
+        });
+    </script>
+</body>
+
+</html>
+
