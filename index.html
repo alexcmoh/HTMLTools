@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+	
+	<meta property="og:title" content="HTML Text Editor">
+	<meta property="og:description" content="A place to test HTML code.">
+	<meta property="og:site_name" content="Web Utility Pages" >
+	<meta property="og:image" content="https://roboloid.github.io/khux/images/assets/xtres/xtres-communication_thumb-TresCommunication_thumL_00006.png">
+    <title>HTML Text Editor</title>
+</head>
+<body>
+    <h1>HTML Text Editor</h1>
+    <div class="half-l">
+        <textarea type="text" id="input"></textarea>
+    </div>
+    <div class="half-r">
+        <div id="output" contenteditable="true"></div>
+    </div>
+
+    <script>
+        const input = document.querySelector('#input'),
+        output = document.querySelector('#output');
+        $("#input").on("keyup", function(){
+            document.getElementById('output').innerHTML = document.getElementById('input').value;
+        });
+        $("textarea").each(function () {
+            this.setAttribute("style", "height:" + (this.scrollHeight) + "px;overflow-y:hidden;");
+            }).on("input", function () {
+            this.style.height = 0;
+            this.style.height = (this.scrollHeight) + "px";
+        });
+    </script>
+</body>
+
+</html>
+
