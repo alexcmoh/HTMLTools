@@ -1,4 +1,4 @@
-function HTML_Editor() {
+function HTMLEditor() {
     return (
       <div>
         <h1>HTML Editor Page</h1>
@@ -7,4 +7,4 @@ function HTML_Editor() {
     );
   }
   
-  export default HTML_Editor;
+  export default HTMLEditor;
