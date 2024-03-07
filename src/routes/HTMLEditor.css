@@ -1,0 +1,54 @@
+h2  {
+    text-align: center;
+}
+
+textarea   {
+    width: 500px;
+    height: 532px;
+    min-height: 500px;
+    resize: none;
+    border-color: #ccc;
+    background-color: #202123;
+    color: #cacaca;
+    font-family: Arial;
+    font-size: 1em;
+    padding: 1em;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.half-l   {
+    margin: auto;
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    width: 45%;
+}
+
+.half-r   {
+    margin: auto;
+    vertical-align: top;
+    display: inline-block;
+    width: 45%;
+}
+
+#output {
+    margin: auto;
+    width: 500px;
+    min-height: 532px;
+    border: 0.05em;
+    border-color: #ccc;
+    background-color: #202123;
+    color: #cacaca;
+    border-style: solid;
+    font-size: 1em;
+    padding: 1em;
+    overflow-y: visible;
+    text-align: left;
+}
+
+#output:focus{
+    outline: none;
+}
