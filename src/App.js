@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import { Routes, Route} from "react-router-dom";
-import About from "./routes/About";
-import HTML_Editor from "./routes/HTML_Editor";
-import Home from "./routes/Home";
+import { Routes, Route} from 'react-router-dom';
+import About from './routes/About';
+import HTML_Editor from './routes/HTML_Editor';
+import Home from './routes/Home';
 import Navbar from './Navbar';
 
 function App() {
