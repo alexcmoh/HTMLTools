@@ -5,10 +5,12 @@ import HTMLEditor from './routes/HTMLEditor';
 import Home from './routes/Home';
 import PrefixAppender from './routes/PrefixAppender';
 import Navbar from './Navbar';
+import Nightmode from './Nightmode';
 
 function App() {
   return (
     <>
+	<Nightmode />
 		<Navbar />
 		<Routes>
 			<Route index element={<HTMLEditor />} />
