@@ -3,7 +3,7 @@ import {Routes, Route } from 'react-router-dom';
 import About from './routes/About';
 import HTMLEditor from './routes/HTMLEditor';
 import Home from './routes/Home';
-import SuffixAppender from './routes/SuffixAppender';
+import PrefixAppender from './routes/PrefixAppender';
 import Navbar from './Navbar';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
 			<Route path="/" element={<Home />} />
 			<Route path="/about" element={<About />} />
 			<Route path="/html_editor" element={<HTMLEditor />} />
-			<Route path="/suffix_appender" element={<SuffixAppender />} />
+			<Route path="/prefix_appender" element={<PrefixAppender />} />
 		</Routes>
     </>
   );

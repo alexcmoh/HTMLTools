@@ -29,7 +29,8 @@ function HTMLEditor() {
 
 	return (
 		<div>
-			<h1>HTML Editor Page</h1>
+			<h1>HTML Editor</h1>
+            <p>Test the appearance of HTML code.</p>
 			<div class="half-l">
 				<h2>Input</h2>
 				<textarea
@@ -46,7 +47,6 @@ function HTMLEditor() {
 				<div
 					id="output"
 					contenteditable="true"
-					aria-readonly
 				>The formatted output will appear here.
 				</div>
 			</div>
