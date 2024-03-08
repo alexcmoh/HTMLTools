@@ -1,13 +1,7 @@
 import './Nightmode.css';
 import React from "react";
 
-const { useState } = React;
-
 const Nightmode = () => {
-
-    const [bgColor, setBgColor] = useState('white');
-
-    const appStyle = ['App', bgColor].join(' ');
 
     const handleClick = (arg) => {
         switch (arg) {
